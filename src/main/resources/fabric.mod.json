@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "arsenal-overruled",
+  "version": "${version}",
+  "name": "arsenal-overruled",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/arsenal-overruled/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "net.rose.arsenalOverruled.client.ArsenalOverruledDataGenerator"
+    ],
+    "client": [
+      "net.rose.arsenalOverruled.client.ArsenalOverruledClient"
+    ],
+    "main": [
+      "net.rose.arsenalOverruled.ArsenalOverruled"
+    ]
+  },
+  "mixins": [
+    "arsenal-overruled.mixins.json"
+  ],
+  "accessWidener": "arsenal-overruled.accesswidener",
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
