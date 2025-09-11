@@ -4,6 +4,7 @@
   "package": "net.rose.arsenalOverruled.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "AnchorbladeEntityMixin",
     "ScytheItemMixin"
   ],
   "client": [
