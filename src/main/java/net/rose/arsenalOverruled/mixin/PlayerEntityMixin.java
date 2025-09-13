@@ -13,6 +13,7 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
+import net.rose.arsenalOverruled.ArsenalOverruled;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -89,8 +90,7 @@ public abstract class PlayerEntityMixin extends LivingEntity {
                     }
 
                     longswordComponent.absorbDamage(this.getActiveItem(), originalDamageValue);
-                    // FIXME: Annoying aahhhh line
-                    return originalDamageValue / 2.0F;
+                    return originalDamageValue * ArsenalOverruled.LONGSWORD_BLOCKING_DAMAGE_MULTIPLIER;
                 }
 
                 return originalDamageValue;
