@@ -37,7 +37,10 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
+    include(implementation(annotationProcessor("com.github.bawnorton.mixinsquared:mixinsquared-fabric:0.2.0")))
     modImplementation "maven.modrinth:arsenal:otYYNz4L"
+    modImplementation "maven.modrinth:amarite:avD3BFrw"
+    modImplementation "dev.emi:trinkets:3.7.1"
     // modImplementation "maven.modrinth:ratatouille:ItOHFGeC"
     modImplementation("com.jamieswhiteshirt:reach-entity-attributes:2.4.0")
 }

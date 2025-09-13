@@ -18,6 +18,9 @@
     ],
     "main": [
       "net.rose.arsenalOverruled.ArsenalOverruled"
+    ],
+    "mixinsquared": [
+      "net.rose.arsenalOverruled.ArsenalOverruledMixinCanceller"
     ]
   },
   "mixins": [
